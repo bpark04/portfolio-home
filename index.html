@@ -25,21 +25,52 @@
 
   <body>
 
-    <header class="header-area navbar-fade" id="header">
-      <nav class="navbar">
-        <a class="navbar-brand" id="navbarBrand">LOGO<a>
-        <a class="navbar-toggler" id="toggleBtn"><i class="fas fa-bars" aria-hidden="true"></i></a>
-        <div class="navbar-menu" id="menu">
+    <header class="header-area nav-fade" id="header">
+      <nav class="nav">
+        <a class="nav-brand" id="navBrand">Byung-Sun Park</a>
+        <a class="nav-toggler" id="toggleBtn"><i class="fas fa-bars" aria-hidden="true"></i></a>
+        <div class="nav-menu" id="menu">
           <div class="item-class"><a class="nav-link" id="nav-about">about</a></div>
           <div class="item-class"><a class="nav-link" id="nav-service">service</a></div>
           <div class="item-class"><a class="nav-link" id="nav-portfolio">portfolio</a></div>
           <div class="item-class"><a class="nav-link" id="nav-review">review</a></div>
-
         </div>
       </nav>
     </header>
 
-    <div id="test"></div>
+    <div class="base-frame">
+      <div class="welcome">
+        <div class="container">
+          <div class="image-slide fade">
+            <img src="ubc.jpg">
+          </div>
+          <div class="image-slide fade">
+            <img src="seoulnight.jpg">
+          </div>
+          <div class="image-slide fade">
+            <img src="insta.jpg">
+          </div>
+          <div class="image-slide fade">
+            <img src="cs.jpeg">
+          </div>
+
+          <a class="image-prev" id="imagePrev">&#10094;</a>
+          <a class="image-next" id="imageNext">&#10095;</a>
+
+          <div class="dots">
+              <span class="dot" id="firstDot"></span>
+              <span class="dot" id="secondDot"></span>
+              <span class="dot" id="thridDot"></span>
+              <span class="dot" id="forthDot"></span>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
 
 
 
@@ -48,4 +79,3 @@
   </body>
 
 </html>
-""
