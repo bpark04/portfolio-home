@@ -119,3 +119,51 @@ document.getElementById('all').addEventListener('click', filterSelection.bind(nu
 document.getElementById('uiux').addEventListener('click', filterSelection.bind(null, 'uiux'));
 document.getElementById('js').addEventListener('click', filterSelection.bind(null, 'js'));
 document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
+
+function viewPortfolio(event) {
+  var polyNode = event.target;
+
+  if(polyNode.tagName.toLowerCase() == 'i') { polyNode = polyNode.parentNode; }
+
+  var overlayNode = polyNode;
+  var imageNode = overlayNode.nextElementSibling;
+
+  var itemNode = overlayNode.parentNode;
+  var mainNode = itemNode.nextElementSibling;
+  var subNode = mainNode.nextElementSibling;
+  var textNode = subNode.nextElementSibling;
+
+  document.getElementById('modalImage').src = imageNode.src;
+  document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
+  document.getElementById('modalSub').innerHTML = subNode.innerHTML;
+  document.getElementById('modalText').innerHTML = textNode.innerHTML;
+
+  document.getElementById('portfolioModal').style.display = 'block';
+}
+
+document.getElementById('modalClose').addEventListener('click', function(){
+  document.getElementById('portfolioModal').style.display = 'none';
+});
+
+var filterItems = document.getElementsByClassName('overlay');
+
+for(var i=0;i<filterItems.length;i++){
+  filterItems[i].addEventListener('click', viewPortfolio);
+}
+
+
+
+/* ANCHOR */
+function moveTo(id) {
+  if(id == 'brand'){
+    window.scrollTo(0, 0);
+  } else {
+    window.scrollTo(0, document.getElementById(id).offsetTop - 70);
+  }
+  document.getElementById('menu').classList.remove('show');
+}
+
+document.getElementById('navbarBrand').addEventListener('click', moveTo.bind(null,'brand'));
+document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
+document.getElementById('navbarService').addEventListener('click', moveTo.bind(null,'service'));
+document.getElementById('navbarPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
