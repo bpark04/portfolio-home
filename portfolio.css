@@ -683,3 +683,36 @@ section {
 	font-size: 16px;
 	color: #bbb;
 }
+
+/* FOOTER AREA */
+.footer-area {
+	height: auto;
+	text-align: center;
+	background-color: black;
+}
+
+.footer-area * {
+	color: white;
+}
+
+.footer-area > .sns > .item {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.footer-area > .sns > .item > i {
+	font-size: 24px;
+}
+
+.footer-area > .info > p {
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.footer-area > .info > p > a {
+	font-size: 12px;
+	padding: 10px 0;
+  text-transform: lowercase;
+  color: yellow;
+}
