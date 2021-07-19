@@ -514,9 +514,10 @@ section {
 }
 
 .services-area > .container > .item > .content {
-    font-size: 16px;
-    font-family: 'Noto Sans KR', sans-serif;
-    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6;
     padding: 10px 0;
 }
 
@@ -674,16 +675,16 @@ section {
 
 #portfolioModal > .container > .modal-main {
 	position: relative;
-	font-size: 24px;
+	font-size: 35px;
 	font-weight: bold;
 	color: white;
-	padding: 10px 0;
+	padding: 0;
 }
 
 #portfolioModal > .container > .modal-sub {
-	font-size: 20px;
+	font-size: 14px;
 	color: white;
-	padding: 10px 0;
+	padding-bottom: 20px;
 }
 
 #portfolioModal > .container > .modal-text {
