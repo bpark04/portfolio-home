@@ -116,7 +116,7 @@ function removeClass(element, name) {
 }
 
 document.getElementById('all').addEventListener('click', filterSelection.bind(null, 'all'));
-document.getElementById('uiux').addEventListener('click', filterSelection.bind(null, 'uiux'));
+document.getElementById('python').addEventListener('click', filterSelection.bind(null, 'python'));
 document.getElementById('js').addEventListener('click', filterSelection.bind(null, 'js'));
 document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
 
