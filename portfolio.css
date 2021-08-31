@@ -377,6 +377,7 @@ section {
   color: #777;
 
 
+
 }
 
 .about-area > .text {
@@ -406,6 +407,7 @@ section {
   font-family: sans-serif;
 	letter-spacing: 1px;
   line-height: 1.8;
+  word-break: keep-all;
 }
 
 .about-area > .text > ul {
@@ -519,6 +521,7 @@ section {
     letter-spacing: 1px;
     line-height: 1.6;
     padding: 10px 0;
+    word-break: keep-all;
 }
 
 
